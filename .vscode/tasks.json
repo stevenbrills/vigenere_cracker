@@ -11,7 +11,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"'env.', 'config.' and 'command.' are deprecated, use 'env:', 'config:' and 'command:' instead.",
+                "${fileDirname}/${fileBasenameNoExtension}",
                 
             ],
             "options": {
