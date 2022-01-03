@@ -11,6 +11,8 @@ from operator import itemgetter
 source_text = open("../../source_text/cipher_text.txt","r")
 text = source_text.read()
 text = "".join(text.split())
+text = text.upper()
+source_text.close()
 
 print(len(text))
 
@@ -29,6 +31,7 @@ mono_alphabetic_cipher_text_splits = []   #Contains the individual monoalphaetic
 vigenere_square = []            #Initializing a reference Vigenere Square
 are_you_happy = 0               #Flag to check if user is satisfied with decryption
 
+#Creating a reference Vigenere Square
 for i in range(len(alphabet_english)):
     vigenere_square.append(np.roll(np.array(alphabet_english),-i))
 
